@@ -1,4 +1,5 @@
 import 'package:calender_enstab/UI/introduction_page.dart';
+import 'package:calender_enstab/UI/subjects.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+
       home:  IntroducPage(),
     );
   }

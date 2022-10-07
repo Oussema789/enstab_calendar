@@ -1,6 +1,7 @@
 
 import 'package:calender_enstab/Data/sessions.dart';
 import 'package:calender_enstab/UI/rating.dart';
+import 'package:calender_enstab/UI/subjects.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -160,6 +161,27 @@ class _SicPageState extends State<SicPage> with TickerProviderStateMixin {
                   ),
                   onTap: () {
                     SystemNavigator.pop();
+                  },
+                ),
+                Divider(
+                  thickness: 1,
+                  color: Colors.black,
+                ),
+
+                ListTile(
+                  leading: Icon(Icons.exit_to_app,size: 20,color: Color(0xFF06175A),),
+                  title:  Text('Subjects', style: GoogleFonts.notoSansMono(
+                    color: Color(0xFF06175A),
+                    fontSize: 20,
+                    fontWeight: FontWeight.w700,
+                    fontStyle: FontStyle.italic,
+                  ),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => CheckListPage()),
+                    );;
                   },
                 ),
                 Divider(
